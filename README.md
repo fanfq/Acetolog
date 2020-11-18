@@ -1,8 +1,7 @@
-baseon [Acetolog](https://github.com/iGuan7u/Acetolog) upgrade,
+baseon [Acetolog](https://github.com/iGuan7u/Acetolog) changed.
 
-changed a lot of things
-
-[preview](https://www.elselook.com)
+my podcast publish site
+[live](https://www.elselook.com)
 
 ## License
 MIT
