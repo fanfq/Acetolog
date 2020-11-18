@@ -2,15 +2,15 @@ root: /
 
 Home: /
 
-language: en
+language: zh-CN
 
-author: iGuan7u
-description: A beautiful & simple theme.
+#author: iGuan7u
+#description: A beautiful & simple theme.
 
 # AvatorURL
 # it would be shown on sidecar.
 
-avatar: https://yourAvatorURL
+avatar: http://cdn.elselook.com/icon/3000.png?imageView2/1/w/256/h/256
 
 # Comment
 
@@ -29,9 +29,16 @@ disqus:
 # Contact_Info
 # Contact info will be shown on the side bar.
 
+about: 
+  enable: true
+  title: 我们的Podcast
+  icon: 
+  info: 我们每周五晚上，都会上传我们的节目到我们的网站，同时会自动同步到 Apple Podcast，Google Podcast，Spotify，还有各个不同的收听平台。每一期节目我们都会挑选几个近期我们觉得感兴趣的话题和大家分享、用有趣、类似脱口秀的方式讨论我们的观点。以后可能会丰富我们的节目内容，争取形成属于我们自己的风格。<a href='/about/' style='color:#be223a'> 想要了解更多... </a>
+
 contact:
-  enable: false
-  description: 'Contact Info description'
+  enable: true
+  email: elselook.com@gmail.com
+  description: ''
 
   twitter:
     enable: false
@@ -50,6 +57,10 @@ contact:
     username: facebook_username
 
   instagram:
+    enable: false
+    username: instagram_username
+    
+  youtube:
     enable: false
     username: instagram_username
 
@@ -73,8 +84,8 @@ google_analytice:
 # which is useful in China mainland.
 
 ICPLicense:
-  enable: false
-  content: "Fill IPCLicense"
+  enable: true
+  content: "苏ICP备15056794号"
 
 # EtraPlugin
 
@@ -89,3 +100,17 @@ node_sass:
   outputStyle: compressed
   precision: 5
   sourceComments: false
+  
+## Sitemap
+sitemap:
+  path: sitemap.xml
+  
+## Baidusitemap
+baidusitemap:
+    path: baidusitemap.xml
+    
+search:
+  path: search.xml
+  field: post
+  content: true
+  

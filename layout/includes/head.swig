@@ -1,5 +1,7 @@
 <title>{{ page.title || config.subtitle || '' }}</title>
 <meta charset="UTF-8">
+<meta name="baidu-site-verification" content="{{ config.baidu_site_verification }}" />
+<meta name="google_site_verification" content="{{ config.google_site_verification }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="{{ url_for('./css/style.css') }}">
 <link rel="shortcut icon", href="{{ url_for('./favicon.ico') }}">

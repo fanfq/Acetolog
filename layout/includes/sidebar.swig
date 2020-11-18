@@ -15,14 +15,19 @@
         <div class="al_sidebar_author_cnt">
 
             <div class="al_sidebar_author_info">
-                <h4>{{ config.author }}</h4>
+            <!--  -->
+                <h4>{{ theme.about.title }}</h4>
+                
                 <img class="al_sidebar_avatar" src="{{ config.avatar || theme.avatar || '' }}">
-                <p>{{ config.description }}</p>
+                <p>{{ theme.about.info }}</p>
             </div>
+            
+           
 
             {% if theme.contact.enable === true %}
                 <div class="al_sidebar_contact_info">
-                    <h4>GET IN TOUCH</h4>
+                    <h4>联系我们</h4>
+                    <p>{{ theme.contact.email }}</p>
                     <p>{{ theme.contact.description }}</p>
 
                     <div class="dis_flex al_sidebar_social_widget">
@@ -66,6 +71,15 @@
                         {% if theme.contact.twitter.enable === true %}
                             <div class="al_social_icon_cnt" data_link="https://www.twitter.com/{{ theme.contact.twitter.username }}/">
                                 <svg class="al_social_icon" id="twitter">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_twitter"></use>
+                                </svg>
+                            </div>
+                        {% endif %}
+                        
+                        {# youtube widget #}
+                        {% if theme.contact.youtube.enable === true %}
+                            <div class="al_social_icon_cnt" data_link="https://www.twitter.com/{{ theme.contact.youtube.username }}/">
+                                <svg class="al_social_icon" id="youtube">
                                     <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_twitter"></use>
                                 </svg>
                             </div>

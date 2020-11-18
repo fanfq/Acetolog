@@ -5,6 +5,7 @@
     min-height: 100vh;
 }
 
+
 .al_section_container {
     height: 55px;
     font-size: 15px;
@@ -31,25 +32,47 @@
 .al_index_pageList_item {
     position: relative;
     list-style-type: none;
-    padding: 80px 20px;
+    padding: 20px 20px;
+    
+}
+
+.al_post_nav{
+	margin-top: 50px;
 }
 
 .al_index_post_title_cnt {
     flex-direction: column;
 }
 
+.al_index_post_date {
+    margin-right: 15px;
+    &::after {
+        content: "/";
+        right: -7px;
+        position: relative;
+    }
+    font-size: 14px;
+    color: #888;
+}
+
+.al_index_post_read_time{
+	font-size: 13px;
+    color: #111;
+    border-radius:5px;
+  	border:1px solid #111;
+}
+
 .al_index_post_title_letter {
     left: -34px;
     line-height: 190px;
-    top: 30px;
+    top: 10px;
 }
 
 .al_index_post_title {
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 36px;
     margin: 0;
     padding: 10px 0;
-
     a {
         display: block;
         color: $list_title_color;
@@ -59,6 +82,8 @@
     a:hover {
         color: $theme_color;
     }
+
+  
 }
 
 .al_index_post_button {
@@ -69,7 +94,7 @@
 }
 
 .al_index_post_extra {
-    margin: 8px 0 26px 0;
+    margin: 8px 0 8px 0;
     color: #888;
     font-size: 13px;
 }
@@ -85,11 +110,22 @@
 
 .al_index_post_excerpt_cnt {
     margin-bottom: 30px;
+   
+}
+
+.al_index_post_excerpt_cnt_ {
+    margin-bottom: 10px;
+   
 }
 
 .al_index_post_excerpt {
     color: $list_desc_color;
     line-height: 30px;
+    display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+   
 }
 
 .al_index_footer {
@@ -134,6 +170,6 @@
     }
 
     .al_index_pageList_item {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 }
